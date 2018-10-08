@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ms_dark_section_divider">#27282A</color>
+    <color name="ms_dark_default_bg_section_divider">#171719</color>
+    <color name="ms_dark_stroke_avatar">#212325</color>
+    <color name="ms_dark_img_placeholder">#252627</color>
+    <color name="ms_dark_default_bg">#1B1C1E</color>
+    <color name="ms_dark_divider">#27282A</color>
+    <color name="ms_dark_default_image_tint_pressed_light">#CC4E545A</color>
+    <color name="ms_dark_default_text">#8F959C</color>
+    <color name="ms_dark_default_text_pressed">#4D8F959C</color>
+    <color name="ms_dark_default_text_secondary">#51555A</color>
+    <color name="ms_dark_default_text_secondary_pressed">#CC51555A</color>
+    <color name="ms_dark_default_image_tint_dark">#4E545A</color>
+    <color name="ms_dark_default_image_tint_pressed">#4D000000</color>
+    <color name="ms_dark_image_tint_toolbar_icon">
+        @color/ms_dark_default_image_tint
+    </color>
+    <color name="ms_dark_default_image_tint">#8F959C</color>
+    <color name="ms_dark_stroke_gray">#303133</color>
+</resources>

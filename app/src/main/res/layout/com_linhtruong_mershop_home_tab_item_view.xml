@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp">
+
+        <linhtruong.com.commons.widgets.MSImageView
+            android:id="@+id/ms_tab_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal" />
+
+        <View
+            android:id="@+id/ms_tab_item_red_dot"
+            style="?attr/msStyleUnreadRedDot"
+            android:layout_gravity="top|right"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </FrameLayout>
+
+    <linhtruong.com.commons.widgets.MSTextView
+        android:id="@+id/ms_tab_title"
+        style="@style/Text.Singleline"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:textColor="@color/ms_home_bottom_tab_text"
+        android:textSize="10sp" />
+
+</merge>

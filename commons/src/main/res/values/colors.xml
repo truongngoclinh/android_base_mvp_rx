@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ms_image_tint_toolbar_icon">#33373b</color>
+    <color name="ms_default_text">#28292f</color>
+    <color name="ms_default_text_pressed">#4D28292f</color>
+    <color name="ms_default_text_color_hint">#D6D6D6</color>
+    <color name="ms_default_bg">#FFFFFF</color>
+    <color name="ms_default_red">#EB3737</color>
+    <color name="ms_default_gray">#8A9095</color>
+    <color name="ms_item_pressed">#33888888</color>
+    <color name="ms_default_text_secondary">#8A9095</color>
+    <color name="ms_color_stroke_gray">#DADADA</color>
+    <color name="ms_main_red_dark_pressed">#731717</color>
+    <color name="ms_default_red_disabled">#4DEB3737</color>
+    <color name="ms_main_red_dark">@color/ms_default_red</color>
+    <color name="ms_float_btn_bg_red">#EE3534</color>
+    <color name="ms_home_bottom_tab_text">#878B8F</color>
+    <color name="ms_home_bottom_tab_text_selected">#EB3737</color>
+    <color name="ms_img_placeholder">#F5F6F8</color>
+    <color name="ms_txt_color_hint">#D6D6D6</color>
+    <color name="ms_stroke_gray">#DADADA</color>
+    <color name="ms_section_divider">#EEEEEE</color>
+    <color name="ms_item_pressed_on_white">#dddddd</color>
+    <color name="ms_default_bg_section_divider">#F5F6F8</color>
+    <color name="ms_color_divider">#EEEEEE</color>
+    <color name="ms_default_image_tint_pressed_light">#7FFFFFFF</color>
+    <color name="ms_default_text_secondary_pressed">#4D8A9095</color>
+    <color name="ms_default_image_tint_dark">#00000000</color>
+    <color name="ms_default_image_tint_pressed">#4D000000</color>
+    <color name="ms_red_dot_badge_tab_menu_bg">@color/ms_default_red</color>
+</resources>

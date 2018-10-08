@@ -1,0 +1,141 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        // These docs use an open ended version so that our plugin
+        // can be updated quickly in response to Android tooling updates
+
+        // We recommend changing it to the latest version from our changelog:
+        // https://docs.fabric.io/android/changelog.html#fabric-gradle-plugin
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "linhtruong.com.mershop"
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
+        versionCode versions.code
+        versionName versions.name
+
+        project.archivesBaseName = "mershop_dev_" + versionCode
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../misc/keystore/debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            v2SigningEnabled false
+        }
+
+        release {
+            storeFile file('../misc/keystore/release.keystore')
+            storePassword 'mershop'
+            keyAlias 'release'
+            keyPassword 'mershop'
+            v2SigningEnabled true
+        }
+
+        buildTypes {
+            debug {
+                signingConfig signingConfigs.debug
+                minifyEnabled false
+                debuggable true
+            }
+            release {
+                signingConfig signingConfigs.release
+                minifyEnabled true
+                debuggable false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                shrinkResources true
+            }
+        }
+
+        flavorDimensions("country")
+        productFlavors {
+            vietnam {
+                dimension "country"
+                applicationId "com.linhtruong.mershop.vn"
+                versionCode 1 // odd
+                versionName "1.0"
+                buildConfigField "String", "COUNTRY", "\"VN\""
+                buildConfigField "String", "PRODUCTION_SERVER", "\"https://mobile.cyberpay.in.th/\""
+                buildConfigField "String", "LOCAL_TEST_SERVER", "\"\""
+                buildConfigField "String", "STAGING_SERVER", "\"http\""
+//            buildConfigField "Boolean", "INTERNAL_RELEASE", internal_release
+            }
+
+            japan {
+                dimension "country"
+                applicationId "com.linhtruong.mershop.jp"
+                versionCode 2 // even
+                versionName "1.0"
+                buildConfigField "String", "COUNTRY", "\"JP\""
+                buildConfigField "String", "TEST_SERVER", "\"\""
+                buildConfigField "String", "STAGING_SERVER", "\"\""
+                buildConfigField "String", "PRODUCTION_SERVER", "\"https://mobile.cyberpay.in.th/\""
+//            buildConfigField "Boolean", "INTERNAL_RELEASE", internal_release
+            }
+        }
+
+        dexOptions {
+            // added for instant-run optimization
+            maxProcessCount 4
+            javaMaxHeapSize "8g"
+        }
+    }
+
+    dependencies {
+        implementation project(':network')
+        implementation project(':protocol')
+
+        implementation libraries.supportDesign
+        implementation libraries.supportAppCompat
+        implementation libraries.supportAnnotations
+        implementation libraries.supportRecyclerView
+
+        implementation libraries.dagger
+        annotationProcessor libraries.daggerCompiler
+        implementation libraries.butterKnife
+        annotationProcessor libraries.butterKnifeCompiler
+
+        implementation libraries.rxJava
+        implementation libraries.rxAndroid
+
+        implementation libraries.picasso
+        implementation libraries.picasso2_okhttp3_downloader
+
+        implementation(libraries.fabric) {
+            transitive = true
+        }
+
+        debugImplementation libraries.leakcanary
+        releaseImplementation libraries.leakcanary_no_op
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ms_toolbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ms_default_toolbar_height"
+    android:orientation="horizontal">
+
+    <linhtruong.com.commons.widgets.MSImageView
+        android:id="@+id/ms_toolbar_ic"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <linhtruong.com.commons.widgets.MSTextView
+            android:id="@+id/ms_toolbar_title"
+            style="@style/Text.Singleline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="main"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <linhtruong.com.commons.widgets.MSTextView
+            android:id="@+id/ms_toolbar_subtitle"
+            style="@style/TextSecondary.Singleline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ms_toolbar_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="sub"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</LinearLayout>

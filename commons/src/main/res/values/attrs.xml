@@ -1,0 +1,33 @@
+<resources>
+    <declare-styleable name="MSView">
+        <attr name="ms_bg_tint" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MSErrorActionView">
+        <attr name="ms_eav_icon" format="reference" />
+        <attr name="ms_eav_text" format="string" />
+        <attr name="ms_eav_btn_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MSImageView">
+        <attr name="ms_src_tint" format="color|reference" />
+        <attr name="ms_stroke_color" format="color|reference" />
+        <attr name="ms_stroke_width" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MSEmptyView">
+        <attr name="ms_ev_src" format="reference" />
+        <attr name="ms_ev_title" format="string|reference" />
+        <attr name="ms_ev_subtitle" format="string|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MSCircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_padding" format="dimension" />
+        <attr name="civ_src_tint" format="color|reference" />
+        <attr name="civ_circle_bg_color" format="color|reference" />
+    </declare-styleable>
+
+</resources>

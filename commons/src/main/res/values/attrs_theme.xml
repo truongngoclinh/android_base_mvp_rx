@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="msDrawableBgProgressDialog" format="reference" />
+    <attr name="msColorTextSecondary" format="reference" />
+    <attr name="msToolBarTheme" format="reference" />
+    <attr name="msColorTextDefault" format="reference" />
+    <attr name="msColorStrokeGray" format="reference" />
+    <attr name="msStyleUnreadRedDot" format="reference" />
+    <attr name="msColorBgImagePlaceholder" format="reference" />
+    <attr name="msColorImageTintToolBarIcon" format="reference" />
+    <attr name="msDrawableBgDefaultWithEdgeBottom" format="reference" />
+    <attr name="msColorStrokeAvatar" format="reference" />
+    <attr name="msDrawableBgSectionDivider" format="reference" />
+    <attr name="msDrawableBgDefaultSelector" format="reference" />
+    <attr name="msDrawablePlaceholderUser" format="reference" />
+    <attr name="msColorDivider" format="reference" />
+    <attr name="msColorSelectorImageTintTransparentLight" format="reference" />
+    <attr name="msColorSelectorTextSecondary" format="reference" />
+    <attr name="msColorImageTintDark" format="reference" />
+    <attr name="msColorBgDefault" format="reference" />
+    <attr name="msColorSelectorImageTintTransparent" format="reference" />
+</resources>

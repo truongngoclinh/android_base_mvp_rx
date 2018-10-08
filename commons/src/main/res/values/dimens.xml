@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ms_default_round_radius">3dp</dimen>
+    <dimen name="ms_item_horizontal_padding">12dp</dimen>
+    <dimen name="ms_default_button_height">44dp</dimen>
+    <dimen name="ms_default_toolbar_height">44dp</dimen>
+    <dimen name="ms_default_button_radius">22dp</dimen>
+    <dimen name="ms_home_bottom_tab_height">50dp</dimen>
+    <dimen name="ms_timeline_list_item_offset">3dp</dimen>
+    <dimen name="ms_item_horizontal_margin">16dp</dimen>
+    <dimen name="ms_default_section_divider_height">10dp</dimen>
+    <dimen name="ms_avatar_size_profile">60dp</dimen>
+
+    <!-- red dot -->
+    <dimen name="ms_red_dot_radius">10dp</dimen>
+    <dimen name="ms_red_dot_stroke_width">1dp</dimen>
+
+    <!-- list common-->
+    <dimen name="ms_list_item_height">54dp</dimen>
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/ms_default_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <linhtruong.com.commons.widgets.MSImageView
+            android:id="@+id/ms_product_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_place_holder" />
+
+        <linhtruong.com.commons.widgets.MSImageView
+            android:id="@+id/ms_badge_sold_out"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_badge_soldout"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/ms_detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:id="@+id/ms_layout_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <linhtruong.com.commons.widgets.MSImageView
+                android:id="@+id/ms_number_like"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_like" />
+
+            <linhtruong.com.commons.widgets.MSTextView
+                android:id="@+id/ms_like_count"
+                style="@style/TextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ms_layout_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ms_layout_likes"
+            android:orientation="horizontal">
+
+            <linhtruong.com.commons.widgets.MSImageView
+                android:id="@+id/ms_number_comment"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/icon_comment" />
+
+            <linhtruong.com.commons.widgets.MSTextView
+                android:id="@+id/ms_comment_count"
+                style="@style/TextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ms_layout_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <linhtruong.com.commons.widgets.MSTextView
+                android:id="@+id/ms_dollar_sign"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:gravity="center|right"
+                android:paddingRight="2dp"
+                android:text="$" />
+
+            <linhtruong.com.commons.widgets.MSTextView
+                android:id="@+id/ms_price"
+                style="@style/TextSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

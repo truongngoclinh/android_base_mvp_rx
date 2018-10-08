@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogTransparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.35</item>
+    </style>
+
+    <style name="Text" parent="RobotoR.14">
+        <item name="android:textColor">?attr/msColorTextDefault</item>
+    </style>
+
+    <style name="Text.Singleline">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="TextSecondary" parent="RobotoR.14">
+        <item name="android:textColor">?attr/msColorTextSecondary</item>
+    </style>
+
+    <style name="TextSecondary.Singleline">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="RobotoR.20">
+        <item name="android:textColor">?attr/msColorTextDefault</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Button" parent="Text.Singleline">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_height">@dimen/ms_default_button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+    <style name="Button.StrokeRed">
+        <item name="android:textColor">@color/com_linhtruong_mershop_btn_text_selector_red</item>
+        <item name="android:background">@drawable/com_linhtruong_mershop_button_hollow_bg_red</item>
+    </style>
+
+    <style name="UnreadRedDot">
+        <item name="android:layout_width">@dimen/ms_red_dot_radius</item>
+        <item name="android:layout_height">@dimen/ms_red_dot_radius</item>
+        <item name="android:background">@drawable/com_linhtruong_mershop_redot</item>
+    </style>
+
+    <style name="UnreadRedDotDark">
+        <item name="android:layout_width">@dimen/ms_red_dot_radius</item>
+        <item name="android:layout_height">@dimen/ms_red_dot_radius</item>
+        <item name="android:background">@drawable/com_linhtruong_mershop_dark_red_dot</item>
+    </style>
+
+    <style name="CircleImageView">
+        <item name="civ_border_width">1px</item>
+        <item name="civ_border_color">?attr/msColorStrokeAvatar</item>
+    </style>
+
+    <style name="SectionDivider">
+        <item name="android:background">?attr/msDrawableBgSectionDivider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ms_default_section_divider_height</item>
+    </style>
+
+</resources>

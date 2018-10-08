@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="linhtruong.com.mershop">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.App"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_launcher"
+        android:label="@string/ms_mershop"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MSAppTheme">
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0cbee9c92e0e26534c3180c7fd64d49dd2cc2ec0" />
+
+        <activity
+            android:name=".splash.MSSplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".home.MSHomeActivity" />
+        <activity
+            android:name=".home.timeline.detail.MSTimelineCategoryDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".home.timeline.sell.MSTimelineSellActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="linhtruong.com.mershop.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+</manifest>

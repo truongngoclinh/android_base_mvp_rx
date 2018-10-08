@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_placeholder"
+        android:layout_width="205dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_network_error"
+        android:visibility="gone" />
+
+    <com.garena.gxx.commons.widget.GGTextView
+        android:id="@+id/tv_title"
+        style="@style/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/ms_item_horizontal_margin"
+        android:paddingRight="@dimen/ms_item_horizontal_margin"
+        android:textColor="?attr/msColorTextDefault"
+        android:textSize="17sp" />
+
+    <com.garena.gxx.commons.widget.GGTextView
+        android:id="@+id/tv_subtitle"
+        style="@style/Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:paddingLeft="@dimen/ms_item_horizontal_margin"
+        android:paddingRight="@dimen/ms_item_horizontal_margin"
+        android:textColor="?attr/msColorTextSecondary" />
+
+</merge>

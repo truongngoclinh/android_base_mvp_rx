@@ -1,0 +1,27 @@
+<resources>
+    <string name="ms_me_page_title">Me</string>
+    <string name="ms_notification_page_title">Notification</string>
+    <string name="ms_home_page_title">Home</string>
+    <string name="ms_chat_page_title">Chat</string>
+    <string name="ms_loading">Loading</string>
+    <string name="ms_label_language">Loading</string>
+    <string name="ms_label_detail">Detail</string>
+    <string name="ms_timeline_page_title">Timeline</string>
+    <string name="ms_label_ok">OK</string>
+    <string name="ms_label_later">Later</string>
+    <string name="ms_label_details">Details</string>
+    <string name="ms_label_settings">Settings</string>
+    <string name="ms_label_empty">Empty</string>
+    <string name="ms_under_development_notice">Under developement!</string>
+    <string name="ms_permission_rationale">Please grant us permission in order to proceed with this request</string>
+    <string name="ms_network_error">Network error. Please try again later.</string>
+    <string name="ms_label_refresh">Refresh</string>
+    <string name="ms_night_mode">Night Mode</string>
+    <string name="ms_day_mode">Day Mode</string>
+    <string name="ms_label_guess">Guess</string>
+    <string name="ms_label_camera">Camera</string>
+    <string name="ms_tap_to_login">Tap to login</string>
+    <string name="ms_label_warning_content">Please uninstall this app immediately.\nDownload the official app from Mershop website.</string>
+    <string name="ms_label_warning_unofficial">WARNING\u003A This is not the official Mershop app</string>
+
+</resources>

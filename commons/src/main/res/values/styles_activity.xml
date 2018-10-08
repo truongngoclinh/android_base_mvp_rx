@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MSBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorAccent">@color/ms_default_red</item>
+        <item name="colorAccent">@color/ms_default_red</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:actionModeBackground">@color/ms_default_bg</item>
+        <item name="actionModeStyle">@style/BaseActionMode</item>
+        <item name="colorControlActivated">@color/ms_default_red</item>
+        <item name="colorSwitchThumbNormal">@color/ms_default_gray</item>
+        <item name="android:colorEdgeEffect">@color/ms_item_pressed</item>
+    </style>
+
+    <style name="MSAppTheme" parent="MSBaseTheme">
+        <item name="msDrawableBgProgressDialog">@drawable/com_linhtruong_mershop_bg_progress</item>
+        <item name="msColorStrokeGray">@color/ms_color_stroke_gray</item>
+        <item name="msColorImageTintToolBarIcon">@color/ms_image_tint_toolbar_icon</item>
+        <item name="msColorTextDefault">@color/ms_default_text</item>
+        <item name="msColorTextSecondary">@color/ms_default_text_secondary</item>
+        <item name="msStyleUnreadRedDot">@style/UnreadRedDot</item>
+        <item name="msColorBgImagePlaceholder">@color/ms_img_placeholder</item>
+        <item name="msColorStrokeAvatar">@color/ms_stroke_gray</item>
+        <item name="msToolBarTheme">@style/ToolbarTheme</item>
+        <item name="msDrawableBgSectionDivider">@color/ms_stroke_gray</item>
+        <item name="msDrawableBgDefaultSelector">@drawable/com_linhtruong_mershop_item_selector_default_bg</item>
+        <item name="msDrawablePlaceholderUser">@drawable/me_whiteprofile_user_default</item>
+        <item name="msColorDivider">@color/ms_color_divider</item>
+        <item name="msColorSelectorImageTintTransparentLight">@color/com_linhtruong_mershop_img_tint_selector_light
+        </item>
+        <item name="msColorSelectorTextSecondary">@color/com_linhtruong_mershop_secondary_text_selector</item>
+        <item name="msColorImageTintDark">@color/ms_default_image_tint_dark</item>
+        <item name="msColorBgDefault">@color/ms_default_bg</item>
+        <item name="msColorSelectorImageTintTransparent">@color/com_linhtruong_mershop_img_tint_selector</item>
+    </style>
+
+    <style name="MSAppDarkTheme" parent="MSBaseTheme">
+        <item name="msDrawableBgProgressDialog">@drawable/com_linhtruong_mershop_dark_bg_progress</item>
+        <item name="msColorStrokeGray">@color/ms_dark_stroke_gray</item>
+        <item name="msColorImageTintToolBarIcon">@color/ms_dark_image_tint_toolbar_icon</item>
+        <item name="msColorTextDefault">@color/ms_dark_default_text</item>
+        <item name="msColorTextSecondary">@color/ms_dark_default_text_secondary</item>
+        <item name="msStyleUnreadRedDot">@style/UnreadRedDotDark</item>
+        <item name="msColorBgImagePlaceholder">@color/ms_dark_img_placeholder</item>
+        <item name="msColorStrokeAvatar">@color/ms_dark_stroke_avatar</item>
+        <item name="msToolBarTheme">@style/ToolbarDarkTheme</item>
+        <item name="msDrawableBgDefaultSelector">@drawable/com_linhtruong_mershop_dark_item_selector_default_bg</item>
+        <item name="msDrawablePlaceholderUser">@drawable/me_blackprofile_user_default</item>
+        <item name="msColorDivider">@color/ms_dark_divider</item>
+        <item name="msColorSelectorImageTintTransparentLight">
+            @color/com_linhtruong_mershop_dark_img_tint_selector_light
+        </item>
+        <item name="msColorSelectorTextSecondary">@color/com_linhtruong_mershop_dark_secondary_text_selector</item>
+        <item name="msColorImageTintDark">@color/ms_dark_default_image_tint_dark</item>
+        <item name="msColorBgDefault">@color/ms_dark_default_bg</item>
+        <item name="msColorSelectorImageTintTransparent">@color/com_linhtruong_mershop_dark_img_tint_selector</item>
+    </style>
+
+</resources>

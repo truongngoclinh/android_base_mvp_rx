@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ms_base_icon"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:src="@drawable/ic_network_error" />
+
+    <linhtruong.com.commons.widgets.MSTextView
+        android:id="@+id/ms_base_text_tips"
+        style="@style/TextSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="@dimen/ms_item_horizontal_padding"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="@dimen/ms_item_horizontal_padding"
+        android:text="@string/ms_network_error" />
+
+    <linhtruong.com.commons.widgets.MSTextView
+        android:id="@+id/ms_base_text_action"
+        style="@style/Button.StrokeRed"
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/ms_label_refresh" />
+</merge>
